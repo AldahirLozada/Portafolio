@@ -1,0 +1,192 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #00011e ;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+.card {
+    width: 40%;
+    height: 50%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 0 15px #03e3f8,0 0 20px #99f1f9, 0 0 35px #c4faff, inset 0 0 25px #c4faff, 0 0 40px #fff;
+}
+
+.head {
+    font-weight: 800;
+    font-size: 2em;
+    color: #fffef8;
+    text-transform: uppercase;
+    margin: 50px 0 50px 0;
+}
+
+.email input{
+    margin-bottom: 45px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #c619ea;
+    width: 100%;
+    height: 25px;
+    color: #fff;
+    outline: none;
+}
+
+.email label {
+    margin-bottom: 20px;
+    color: #fffef8;
+    display: inline-block;
+    width: 100%;
+}
+
+.pass input {
+    margin-bottom: 60px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #c619ea;
+    width: 100%;
+    height: 25px;
+    color: #fff;
+    outline: none;    
+}
+
+.pass label {
+    margin-bottom: 20px;
+    color: #fffef8;
+    display: inline-block;
+    width: 100%;
+}
+
+/*
+a {
+    padding: 5px;
+    color: #ffeb33;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 2px;
+  }
+  
+a:hover {
+    letter-spacing: 4px;
+    font-weight: 900;
+    background: #ffeb33;
+    color: #00011e;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ffef61,
+                0 0 25px #fff38c,
+                0 0 50px #fffacb,
+                0 0 100px #fffef5;
+  }
+*/
+
+a{
+    position: relative;
+    display: inline-block;
+    padding: 15px 10px;
+    margin: 1.5px 0;
+    color: #fffb2c;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 2px;
+    overflow: hidden;   
+}
+a:hover{
+    letter-spacing: 4px;
+    font-weight: 700;
+    background: #fffb2c;
+    color: #00011e;
+    box-shadow: 0 0 5px #fffc51,
+                0 0 25px #fffd8b,
+                0 0 50px #fffebf,
+                0 0 150px #fffc51;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+a:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+a:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+a span{
+    position: absolute;
+    display: block;
+}
+a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#fffb2c);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#fffb2c);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+a span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#fffb2c);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#fffb2c);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
